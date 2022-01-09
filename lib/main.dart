@@ -99,7 +99,13 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ],
     );
-
+    // print("________________________________");
+    // print("***** DUBUGGING *****");
+    // print('Screen height: ${MediaQuery.of(context).size.height}');
+    // print('Screen widght: ${MediaQuery.of(context).size.width}');
+    // print('Appbar height: ${appbar.preferredSize.height}');
+    // print('StatusBar height: ${MediaQuery.of(context).padding.top}');
+    // print("________________________________");
     return Scaffold(
       appBar: appbar,
       body: SingleChildScrollView(
