@@ -52,7 +52,28 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
-  final List<Transaction> _userTransactions = [];
+  final List<Transaction> _userTransactions = [
+    Transaction(
+        id: DateTime.now().toString(),
+        title: "Гречка",
+        amount: 1.11,
+        date: DateTime.now()),
+    Transaction(
+        id: DateTime.now().toString(),
+        title: "Рис",
+        amount: 2.22,
+        date: DateTime.now()),
+    Transaction(
+        id: DateTime.now().toString(),
+        title: "Макароны",
+        amount: 3.33,
+        date: DateTime.now()),
+    Transaction(
+        id: DateTime.now().toString(),
+        title: "Компот",
+        amount: 4.44,
+        date: DateTime.now())
+  ];
 
   bool _showChart = false;
 
